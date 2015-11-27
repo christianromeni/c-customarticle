@@ -1,0 +1,7 @@
+.w25 {
+	width:25%;
+	float: left;
+}
+.w25 .tl_box, .w25 .tl_select, .w25 .tl_tbox, .w25 .tl_select, .w25 .tl_box, .w25 .tl_mselect, .w25 .tl_tbox, .w25 .tl_mselect, .w25 .tl_text {
+	width: 193px;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+	<file datatype="php" original="system/modules/c-customarticles/languages/de/tl_content.php" source-language="de">
+    <body>
+      <trans-unit id="tl_content.grid_legend">
+        <source>Grid Einstellungen</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_xs.0">
+        <source>Artikel Breite Mobil</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_xs.1">
+        <source>Artikel Breite im Mobile-Layout (Default 12).</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_sm.0">
+        <source>Artikel Breite Tablet</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_sm.1">
+        <source>Artikel Breite im Tablet-Layout.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_md.0">
+        <source>Artikel Breite Desktop</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_md.1">
+        <source>Artikel Breite im Desktop-Layout.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_lg.0">
+        <source>Artikel Breite Max</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_lg.1">
+        <source>Artikel Breite im Max-Layout.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.0">
+        <source>Verstecke in Layout:</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.1">
+        <source>Versteckt diesen Inhalt in dem ausgewählten Layut.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.0">
+        <source>Zeige nur in Layout:</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.1">
+        <source>Zeigt diesen inhalt nur im ausgewälten Layout.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.visible-xs">
+        <source>Mobile</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.visible-sm">
+        <source>Tablet</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.visible-md">
+        <source>Desktop</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.visible-lg">
+        <source>Max</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.hidden-xs">
+        <source>Mobile</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.hidden-sm">
+        <source>Tablet</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.hidden-md">
+        <source>Desktop</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.hidden-lg">
+        <source>Max</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
