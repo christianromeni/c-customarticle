@@ -1,142 +1,179 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.1">
-	<file datatype="php" original="system/modules/c-customarticles/languages/de/tl_articles.php" source-language="de">
+  <file datatype="php" original="system/modules/c-customarticles/languages/de/tl_articles.php" source-language="en" target-lang="de">
     <body>
       <trans-unit id="tl_article.article_width.0">
-        <source>Artikel Breite</source>
+        <target>Artikel Breite</target>
+        <source>Article width</source>
       </trans-unit>
       <trans-unit id="tl_article.article_width.1">
-        <source>Hier kann die Breite des Artikels festgelegt werden.</source>
+        <target>Hier kann die Breite des Artikels festgelegt werden.</target>
+        <source>Define the width of the article.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_color.0">
-        <source>Artikel Hintergrundfarbe</source>
+        <target>Artikel Hintergrundfarbe</target>
+        <source>Article Backgroundcolor</source>
       </trans-unit>
       <trans-unit id="tl_article.article_color.1">
-        <source>Hier kann die Hintergrundfarbe des Artikels festgelegt werden.</source>
+        <target>Hier kann die Hintergrundfarbe des Artikels festgelegt werden.</target>
+        <source>Define the Backgroundcolor of the article.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_image.0">
-        <source>Artikel Hintergrundbild</source>
+        <target>Artikel Hintergrundbild</target>
+        <source>Article Backgroundimage</source>
       </trans-unit>
       <trans-unit id="tl_article.article_image.1">
-        <source>Hier kann das Hintergrundbild des Artikels festgelegt werden.</source>
+        <target>Hier kann das Hintergrundbild des Artikels festgelegt werden.</target>
+        <source>Define the Backgroundimage of the article.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_image_repeat.0">
-        <source>Artikel Hintergrundbild wiederholung</source>
+        <target>Artikel Hintergrundbild wiederholung</target>
+        <source>Article Backgroundimage repeat</source>
       </trans-unit>
       <trans-unit id="tl_article.article_image_repeat.1">
-        <source>In welcher Richtung soll das Hintergrundbild wiederholt werden?</source>
+        <target>In welcher Richtung soll das Hintergrundbild wiederholt werden?</target>
+        <source>In witch direction should the background image repeat?</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_image_position.0">
-        <source>Artikel Hintergrundbild position</source>
+        <target>Artikel Hintergrundbild position</target>
+        <source>Article Backgroundimage position</source>
       </trans-unit>
       <trans-unit id="tl_article.article_image_position.1">
-        <source>Hier kann die Position des Hintergrundbild festgelegt werden.</source>
+        <target>Hier kann die Position des Hintergrundbild festgelegt werden.</target>
+        <source>Define the Backgroundimage position.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_image_cover.0">
+        <target>Cover Image</target>
         <source>Cover Image</source>
       </trans-unit>
       <trans-unit id="tl_article.article_image_cover.1">
-        <source>Soll das Hintergrundbild als Cover image verwendet werden?</source>
+        <target>Soll das Hintergrundbild als Cover image verwendet werden?</target>
+        <source>Should the background image be used as cover image?</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_image_fixed.0">
-        <source>Hintergrundbild fixiert?</source>
+        <target>Hintergrundbild fixiert?</target>
+        <source>Fixed Backgroundimage</source>
       </trans-unit>
       <trans-unit id="tl_article.article_image_fixed.1">
-        <source>Soll das Hintergrundbild als Cover fixiert verwendet werden?</source>
+        <target>Soll das Hintergrundbild als Cover fixiert verwendet werden?</target>
+        <source>Should the Backgroundimage Cover be fixed?</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_minheight.0">
-        <source>Artikel Mindesthöhe</source>
+        <target>Artikel Mindesthöhe</target>
+        <source>Article min. height</source>
       </trans-unit>
       <trans-unit id="tl_article.article_minheight.1">
-        <source>Hier können Sie die Mindesthöhe des Artikels eingeben.</source>
+        <target>Hier können Sie die Mindesthöhe des Artikels eingeben.</target>
+        <source>Define the min. height of the article.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.inner_article_width.0">
-        <source>Artikel Inhalt Breite</source>
+        <target>Artikel Inhalt Breite</target>
+        <source>Article content width</source>
       </trans-unit>
       <trans-unit id="tl_article.inner_article_width.1">
-        <source>Hier kann die Breite des Inhalts des Artikels festgelegt werden</source>
+        <target>Hier kann die Breite des Inhalts des Artikels festgelegt werden</target>
+        <source>Define the width of the article content.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.inner_article_minheight.0">
-        <source>Artikel Inhalt Mindesthöhe</source>
+        <target>Artikel Inhalt Mindesthöhe</target>
+        <source>Article content min. height</source>
       </trans-unit>
       <trans-unit id="tl_article.inner_article_minheight.1">
-        <source>Hier können Sie die Mindesthöhe des Artikel Inhalts eingeben.</source>
+        <target>Hier können Sie die Mindesthöhe des Artikel Inhalts eingeben.</target>
+        <source>Define the min. height of the article content</source>
       </trans-unit>
 
       <trans-unit id="tl_article.inner_article_color.0">
-        <source>Artikel Inhalt Hintergrundfarbe</source>
+        <target>Artikel Inhalt Hintergrundfarbe</target>
+        <source>Article content Backgroundcolor</source>
       </trans-unit>
       <trans-unit id="tl_article.inner_article_color.1">
-        <source>Hier kann die Hintergrundfarbe des Artikels festgelegt werden.</source>
+        <target>Hier kann die Hintergrundfarbe des Artikels festgelegt werden.</target>
+        <source>Define the Backgroundcolor of the article content.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.inner_article_position.0">
-        <source>Artikel Inhalt Position</source>
+        <target>Artikel Inhalt Position</target>
+        <source>Article content position</source>
       </trans-unit>
       <trans-unit id="tl_article.inner_article_position.1">
-        <source>Hier kann die Position des Inhalts des Artikels festgelegt werden.</source>
+        <target>Hier kann die Position des Inhalts des Artikels festgelegt werden.</target>
+        <source>Define the position of the article content.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.inner_article_space.0">
-        <source>Abstand vom Rand</source>
+        <target>Abstand vom Rand</target>
+        <source>Space from the border</source>
       </trans-unit>
       <trans-unit id="tl_article.inner_article_space.1">
-        <source>Hier kann definiert werden, ob das innere Element einen Abstand zum äusseren Element hat (Oben &amp; Unten)</source>
+        <target>Hier kann definiert werden, ob das innere Element einen Abstand zum äusseren Element hat (Oben &amp; Unten)</target>
+        <source>Define if the content hast spacing to the top or to the bottom</source>
       </trans-unit>
 
       <trans-unit id="tl_article.inner_article_overflow.0">
-        <source>Overflow des inneren Artikles</source>
+        <target>Overflow des inneren Artikles</target>
+        <source>Article content overflow</source>
       </trans-unit>
       <trans-unit id="tl_article.inner_article_overflow.1">
-        <source>Hier kann definiert werden, ob der Inhalt des innere Elements overflowen soll.</source>
+        <target>Hier kann definiert werden, ob der Inhalt des innere Elements overflowen soll.</target>
+        <source>Define if the content of the article content should overflow.</source>
       </trans-unit>
 
       <trans-unit id="tl_article.article_hidden.0">
-        <source>Verstecke in Layout:</source>
+        <target>Verstecke in Layout:</target>
+        <source>Hide in layout:</source>
       </trans-unit>
       <trans-unit id="tl_article.article_hidden.1">
-        <source>Versteckt diesen Artikel in dem ausgewählten Layut.</source>
+        <target>Versteckt diesen Inhalt in dem ausgewählten Layout.</target>
+        <source>Hides this content in the selected layout.</source>
       </trans-unit>
-
       <trans-unit id="tl_article.article_visible.0">
-        <source>Zeige nur in Layout:</source>
+        <target>Zeige nur in Layout:</target>
+        <source>Show only in layout:</source>
       </trans-unit>
       <trans-unit id="tl_article.article_visible.1">
-        <source>Zeigt diesen Artikel nur im ausgewälten Layout.</source>
+        <target>Zeigt diesen inhalt nur im ausgewälten Layout.</target>
+        <source>Show this content only in the selected layout.</source>
       </trans-unit>
-
       <trans-unit id="tl_article.article_visible.visible-xs">
+        <target>Mobile</target>
         <source>Mobile</source>
       </trans-unit>
       <trans-unit id="tl_article.article_visible.visible-sm">
+        <target>Tablet</target>
         <source>Tablet</source>
       </trans-unit>
       <trans-unit id="tl_article.article_visible.visible-md">
+        <target>Desktop</target>
         <source>Desktop</source>
       </trans-unit>
       <trans-unit id="tl_article.article_visible.visible-lg">
+        <target>Max</target>
         <source>Max</source>
       </trans-unit>
-
       <trans-unit id="tl_article.article_hidden.hidden-xs">
+        <target>Mobile</target>
         <source>Mobile</source>
       </trans-unit>
       <trans-unit id="tl_article.article_hidden.hidden-sm">
+        <target>Tablet</target>
         <source>Tablet</source>
       </trans-unit>
       <trans-unit id="tl_article.article_hidden.hidden-md">
+        <target>Desktop</target>
         <source>Desktop</source>
       </trans-unit>
       <trans-unit id="tl_article.article_hidden.hidden-lg">
+        <target>Max</target>
         <source>Max</source>
       </trans-unit>
 

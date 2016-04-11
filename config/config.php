@@ -12,17 +12,20 @@
  * @copyright Romeni WebDesign
  */
 
-if (TL_MODE == 'FE') {
-    $GLOBALS['TL_CSS'][] = 'system/modules/c-customarticles/assets/styles.scss|static';
-}
-
 if (TL_MODE == 'BE') {
-    $GLOBALS['TL_CSS'][] = 'system/modules/c-customarticles/assets/backend.css';
+	$GLOBALS['TL_CSS'][] = 'system/modules/c-customarticles/assets/backend.css';
 }
 
 /**
 * Hooks
 */
-$GLOBALS['TL_HOOKS']['loadDataContainer'][]	= array('customarticle\customarticleHook', 'appendGridComponentsCallback');
-$GLOBALS['TL_HOOKS']['compileArticle'][]		= array('customarticle\customarticleHook', 'insertCustomTemplate');
-$GLOBALS['TL_HOOKS']['getContentElement'][] = array('customarticle\customarticleGridHook', 'insertCustomGrid');
+if (TL_MODE == 'BE') {
+	$GLOBALS['TL_HOOKS']['loadDataContainer'][]	= array('customarticle\customarticleArticleHook', 'appendGridComponentsCallback');
+}
+
+if(TL_MODE == 'FE'){
+	$GLOBALS['TL_HOOKS']['getPageLayout'][]			= array('customarticle\customarticleCSSHook', 'addCSStoLayout');
+	$GLOBALS['TL_HOOKS']['getCombinedFile'][]		= array('customarticle\customarticleLayoutHook', 'modifyCombinedStyle');
+	$GLOBALS['TL_HOOKS']['compileArticle'][]		= array('customarticle\customarticleArticleHook', 'insertCustomTemplate');
+	$GLOBALS['TL_HOOKS']['getContentElement'][]	= array('customarticle\customarticleContentHook', 'insertCustomGrid');
+}

@@ -113,20 +113,20 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['inner_article_color'] = array
     'sql'       => "varchar(64) NOT NULL default ''"
 );
 
-$GLOBALS['TL_DCA']['tl_article']['fields']['inner_article_position'] = array
-    (
-    'label' => &$GLOBALS['TL_LANG']['tl_article']['inner_article_position'],
-    'exclude' => true,
-    'search' => false,
-    'inputType' => 'select',
-    'options' => array(
-        'left_position' => 'Linksbündig',
-        'center_position' => 'Zentriert',
-        'right_position' => 'Rechtsbündig'
-    ),
-    'eval' => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w50'),
-    'sql' => "varchar(32) NOT NULL default ''"
-);
+// $GLOBALS['TL_DCA']['tl_article']['fields']['inner_article_position'] = array
+//     (
+//     'label' => &$GLOBALS['TL_LANG']['tl_article']['inner_article_position'],
+//     'exclude' => true,
+//     'search' => false,
+//     'inputType' => 'select',
+//     'options' => array(
+//         'left_position' => 'Linksbündig',
+//         'center_position' => 'Zentriert',
+//         'right_position' => 'Rechtsbündig'
+//     ),
+//     'eval' => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w50'),
+//     'sql' => "varchar(32) NOT NULL default ''"
+// );
 
 $GLOBALS['TL_DCA']['tl_article']['fields']['inner_article_space'] = array
     (
