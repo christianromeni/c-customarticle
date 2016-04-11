@@ -19,7 +19,7 @@
     "extra": {
         "contao": {
             "sources": {
-                "": "system/modules/c-customarticles"
+                "c-customarticles": "system/modules/c-customarticles"
             }
         }
     }
