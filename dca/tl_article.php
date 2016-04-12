@@ -15,7 +15,7 @@
 /**
  * Add palettes to tl_article
  */
-$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('space;','space;{Artikel},article_visible,article_hidden,article_width,article_minheight,article_color,article_image,article_image_repeat,article_image_position,article_image_cover,article_image_fixed;{Artikel Inhalt},inner_article_width,inner_article_minheight,inner_article_position,inner_article_space,inner_article_overflow,inner_article_color;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{Artikel},article_visible,article_hidden,article_width,article_minheight,article_color,article_image,article_image_repeat,article_image_position,article_image_cover,article_image_fixed;{Artikel Inhalt},inner_article_width,inner_article_minheight,inner_article_position,inner_article_space,inner_article_overflow,inner_article_color;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
 
 /**
  * Add fields to tl_article
