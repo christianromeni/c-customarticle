@@ -20,8 +20,10 @@
       "contao/core-bundle": "~3.5 || ~4.1",
       "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
    },
-   "autoload":{
-      "classmap":["src/"]
+   "autoload": {
+     "psr-4": {
+         "customarticle\\": "src/"
+     }
    },
    "extra":{
       "contao":{
