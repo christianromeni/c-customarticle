@@ -41,6 +41,13 @@
         <source>Breakpoint of the Grid</source>
       </trans-unit>
 
+      <trans-unit id="tl_layout.gridVLG.0">
+        <source>VLG Grid Breakpoint:</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.gridVLG.1">
+        <source>Breakpoint of the Grid</source>
+      </trans-unit>
+
       <trans-unit id="tl_layout.widthXS.0">
         <source>XS Grid Width</source>
       </trans-unit>
@@ -68,6 +75,14 @@
       <trans-unit id="tl_layout.widthLG.1">
         <source>Width of the Grid (should be less than the breakpoint)</source>
       </trans-unit>
+
+      <trans-unit id="tl_layout.widthVLG.0">
+        <source>VLG Grid Width</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthVLG.1">
+        <source>Width of the Grid (should be less than the breakpoint)</source>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
