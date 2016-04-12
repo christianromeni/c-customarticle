@@ -25,7 +25,8 @@ class customarticleCSSHook {
 	public function addCSStoLayout($objPage, $objLayout, $objPty)
 	{
 		if($objLayout->activateCArticles) {
-			$GLOBALS['TL_CSS'][] = 'system/modules/c-customarticles/assets/styles.scss|static';
+			$scssFinal = 'system/modules/c-customarticles/assets/final.scss';
+			$GLOBALS['TL_CSS'][] = $scssFinal . '|static';
 		}
 	}
 }

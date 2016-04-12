@@ -16,15 +16,6 @@
         <target>Aktiviert Custom Artikel für diesen Seitenbaum</target>
       </trans-unit>
 
-      <trans-unit id="tl_layout.gridXS.0">
-        <source>XS Grid Breakpoint:</source>
-        <target>XS Grid Breakpoint:</target>
-      </trans-unit>
-      <trans-unit id="tl_layout.gridXS.1">
-        <source>Breakpoint of the Grid</source>
-        <target>Breakpoint des Grids</target>
-      </trans-unit>
-
       <trans-unit id="tl_layout.gridSM.0">
         <source>SM Grid Breakpoint:</source>
         <target>SM Grid Breakpoint:</target>
@@ -52,13 +43,13 @@
         <target>Breakpoint des Grids</target>
       </trans-unit>
 
-      <trans-unit id="tl_layout.widthXS.0">
-        <source>XS Grid Width</source>
-        <target>XS Grid Breite</target>
+      <trans-unit id="tl_layout.gridVLG.0">
+        <source>VLG Grid Breakpoint:</source>
+        <target>VLG Grid Breakpoint:</target>
       </trans-unit>
-      <trans-unit id="tl_layout.widthXS.1">
-        <source>Width of the Grid (should be less than the breakpoint)</source>
-        <target>Breite des Grids (sollte weniger sein als die entsprechenden Breakpoint)</target>
+      <trans-unit id="tl_layout.gridVLG.1">
+        <source>Breakpoint of the Grid</source>
+        <target>Breakpoint des Grids</target>
       </trans-unit>
 
       <trans-unit id="tl_layout.widthSM.0">
@@ -84,6 +75,15 @@
         <target>LG Grid Breite</target>
       </trans-unit>
       <trans-unit id="tl_layout.widthLG.1">
+        <source>Width of the Grid (should be less than the breakpoint)</source>
+        <target>Breite des Grids (sollte weniger sein als die entsprechenden Breakpoint)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.widthVLG.0">
+        <source>VLG Grid Width</source>
+        <target>VLG Grid Breite</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthVLG.1">
         <source>Width of the Grid (should be less than the breakpoint)</source>
         <target>Breite des Grids (sollte weniger sein als die entsprechenden Breakpoint)</target>
       </trans-unit>

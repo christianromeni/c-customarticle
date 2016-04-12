@@ -15,31 +15,27 @@
 /**
  * Add palettes to tl_layout
  */
-$GLOBALS['TL_DCA']['tl_layout']['palettes']['default'] = str_replace('cols;','cols;{Grid},activateCArticles,gridXS,gridSM,gridMD,gridLG,widthXS,widthSM,widthMD,widthLG;', $GLOBALS['TL_DCA']['tl_layout']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_layout']['palettes']['default'] = str_replace('cols;','cols;{Grid},gridSM,gridMD,gridLG,gridVLG,widthSM,widthMD,widthLG,widthVLG,activateCArticles;', $GLOBALS['TL_DCA']['tl_layout']['palettes']['default']);
 
 $GLOBALS['TL_DCA']['tl_layout']['fields']['activateCArticles'] = array (
 'label'     => &$GLOBALS['TL_LANG']['tl_layout']['activateCArticles'],
-    'exclude'                 => true,
-    'inputType'               => 'checkbox',
-    'eval'                    => array('tl_class'=>'w50 m12'),
-    'sql'                     => "char(1) NOT NULL default ''"
+    'exclude'       => true,
+    'inputType'     => 'checkbox',
+    'eval'          => array('tl_class'=>'w50 m12 clr'),
+    'sql'           => "char(1) NOT NULL default ''",
+    'save_callback' => array(
+        array('customarticle\\generateScss', 'create_scss'),
+    ),
 );
 
 /**
  * Add fields to tl_layout
  */
-$GLOBALS['TL_DCA']['tl_layout']['fields']['gridXS'] = array (
-    'label'     => &$GLOBALS['TL_LANG']['tl_layout']['gridXS'],
-    'inputType' => 'inputUnit',
-    'options'   => $GLOBALS['TL_CSS_UNITS'],
-    'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25 clr'),
-    'sql'       => "varchar(64) NOT NULL default ''"
-);
 $GLOBALS['TL_DCA']['tl_layout']['fields']['gridSM'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_layout']['gridSM'],
     'inputType' => 'inputUnit',
     'options'   => $GLOBALS['TL_CSS_UNITS'],
-    'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25'),
+    'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25 clr'),
     'sql'       => "varchar(64) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_layout']['fields']['gridMD'] = array (
@@ -56,8 +52,8 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['gridLG'] = array (
     'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25'),
     'sql'       => "varchar(64) NOT NULL default ''"
 );
-$GLOBALS['TL_DCA']['tl_layout']['fields']['widthXS'] = array (
-    'label'     => &$GLOBALS['TL_LANG']['tl_layout']['widthXS'],
+$GLOBALS['TL_DCA']['tl_layout']['fields']['gridVLG'] = array (
+    'label'     => &$GLOBALS['TL_LANG']['tl_layout']['gridVLG'],
     'inputType' => 'inputUnit',
     'options'   => $GLOBALS['TL_CSS_UNITS'],
     'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25'),
@@ -79,6 +75,13 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['widthMD'] = array (
 );
 $GLOBALS['TL_DCA']['tl_layout']['fields']['widthLG'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_layout']['widthLG'],
+    'inputType' => 'inputUnit',
+    'options'   => $GLOBALS['TL_CSS_UNITS'],
+    'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25'),
+    'sql'       => "varchar(64) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_layout']['fields']['widthVLG'] = array (
+    'label'     => &$GLOBALS['TL_LANG']['tl_layout']['widthVLG'],
     'inputType' => 'inputUnit',
     'options'   => $GLOBALS['TL_CSS_UNITS'],
     'eval'      => array('includeBlankOption'=>true, 'rgxp'=>'digit_auto_inherit', 'maxlength' => 20, 'tl_class'=>'w25'),

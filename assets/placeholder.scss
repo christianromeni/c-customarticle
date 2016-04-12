@@ -32,22 +32,22 @@
     box-sizing: border-box;
 }
 
-@include inside([[gridXS]],[[padingTopXS]],[[padingBottomXS]]);
+@include inside([[gridXS]],[[paddingTopXS]],[[paddingBottomXS]]);
 
 @media (min-width: [[gridSM]]) {
-  @include inside([[widthSM]],[[padingTopSM]],[[padingBottomSM]]);
+  @include inside([[widthSM]],[[paddingTopSM]],[[paddingBottomSM]]);
 }
 
-@media (min-width: [[widthMD]]) {
-  @include inside([[widthMD]],[[padingTopMD]],[[padingBottomMD]]);
+@media (min-width: [[gridMD]]) {
+  @include inside([[widthMD]],[[paddingTopMD]],[[paddingBottomMD]]);
 }
 
 @media (min-width: [[gridLG]]) {
-  @include inside([[gridLG]],[[padingTopLG]],[[padingBottomLG]]);
+  @include inside([[gridLG]],[[paddingTopLG]],[[paddingBottomLG]]);
 }
 
 @media (min-width: [[gridVLG]]) {
-  @include inside([[widthVLG]],[[padingTopVLG]],[[padingBottomVLG]]);
+  @include inside([[widthVLG]],[[paddingTopVLG]],[[paddingBottomVLG]]);
 }
 
 .container, .container-fluid {

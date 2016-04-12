@@ -25,7 +25,6 @@ if (TL_MODE == 'BE') {
 
 if(TL_MODE == 'FE'){
 	$GLOBALS['TL_HOOKS']['getPageLayout'][]			= array('customarticle\customarticleCSSHook', 'addCSStoLayout');
-	$GLOBALS['TL_HOOKS']['getCombinedFile'][]		= array('customarticle\customarticleLayoutHook', 'modifyCombinedStyle');
 	$GLOBALS['TL_HOOKS']['compileArticle'][]		= array('customarticle\customarticleArticleHook', 'insertCustomTemplate');
 	$GLOBALS['TL_HOOKS']['getContentElement'][]	= array('customarticle\customarticleContentHook', 'insertCustomGrid');
 }
