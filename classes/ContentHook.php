@@ -12,9 +12,9 @@
  * @copyright Romeni WebDesign
  */
 
-namespace customarticle;
+namespace customarticles;
 
-class customarticleContentHook extends \Frontend {
+class ContentHook extends \Frontend {
 	/**
 	 * [insertCustomGrid description]
 	 * @param  Database_Result $objElement

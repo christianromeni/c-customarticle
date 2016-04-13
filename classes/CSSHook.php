@@ -12,9 +12,9 @@
  * @copyright Romeni WebDesign
  */
 
-namespace customarticle;
+namespace customarticles;
 
-class customarticleCSSHook {
+class CSSHook {
 	/**
 	* getArticle hook
 	*

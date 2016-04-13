@@ -12,9 +12,9 @@
  * @copyright Romeni WebDesign
  */
 
-namespace customarticle;
+namespace customarticles;
 
-class generateScss {
+class SCSSGenerator {
 	public function create_scss($value, $dc)
 	{
 		$scssTemplate = 'system/modules/c-customarticles/assets/placeholder.scss';

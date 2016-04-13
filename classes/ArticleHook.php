@@ -12,9 +12,9 @@
  * @copyright Romeni WebDesign
  */
 
-namespace customarticle;
+namespace customarticles;
 
-class customarticleArticleHook extends \System {
+class ArticleHook extends \System {
 	/**
 	* getArticle hook
 	*

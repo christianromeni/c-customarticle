@@ -24,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['activateCArticles'] = array (
     'eval'          => array('tl_class'=>'w50 m12 clr'),
     'sql'           => "char(1) NOT NULL default ''",
     'save_callback' => array(
-        array('customarticle\\generateScss', 'create_scss'),
+        array('customarticles\\SCSSGenerator', 'create_scss'),
     ),
 );
 

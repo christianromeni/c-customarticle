@@ -20,11 +20,11 @@ if (TL_MODE == 'BE') {
 * Hooks
 */
 if (TL_MODE == 'BE') {
-	$GLOBALS['TL_HOOKS']['loadDataContainer'][]	= array('customarticle\customarticleArticleHook', 'appendGridComponentsCallback');
+	$GLOBALS['TL_HOOKS']['loadDataContainer'][]	= array('customarticles\ArticleHook', 'appendGridComponentsCallback');
 }
 
 if(TL_MODE == 'FE'){
-	$GLOBALS['TL_HOOKS']['getPageLayout'][]			= array('customarticle\customarticleCSSHook', 'addCSStoLayout');
-	$GLOBALS['TL_HOOKS']['compileArticle'][]		= array('customarticle\customarticleArticleHook', 'insertCustomTemplate');
-	$GLOBALS['TL_HOOKS']['getContentElement'][]	= array('customarticle\customarticleContentHook', 'insertCustomGrid');
+	$GLOBALS['TL_HOOKS']['getPageLayout'][]			= array('customarticles\CSSHook', 'addCSStoLayout');
+	$GLOBALS['TL_HOOKS']['compileArticle'][]		= array('customarticles\ArticleHook', 'insertCustomTemplate');
+	$GLOBALS['TL_HOOKS']['getContentElement'][]	= array('customarticles\ContentHook', 'insertCustomGrid');
 }

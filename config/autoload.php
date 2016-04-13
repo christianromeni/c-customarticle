@@ -18,7 +18,7 @@
  */
 ClassLoader::addNamespaces(array
 (
-	'customarticle',
+	'customarticles',
 ));
 
 /**
@@ -26,11 +26,10 @@ ClassLoader::addNamespaces(array
  */
 ClassLoader::addClasses(array
 (
-	'customarticle\generateScss'							=> 'system/modules/c-customarticles/classes/generateScss.php',
-	'customarticle\customarticleCSSHook'			=> 'system/modules/c-customarticles/classes/customarticleCSSHook.php',
-	'customarticle\customarticleArticleHook'	=> 'system/modules/c-customarticles/classes/customarticleArticleHook.php',
-	'customarticle\customarticleContentHook'	=> 'system/modules/c-customarticles/classes/customarticleContentHook.php',
-	'customarticle\customarticleLayoutHook'		=> 'system/modules/c-customarticles/classes/customarticleLayoutHook.php',
+	'customarticles\SCSSGenerator'	=> 'system/modules/c-customarticles/classes/SCSSGenerator.php',
+	'customarticles\CSSHook'				=> 'system/modules/c-customarticles/classes/CSSHook.php',
+	'customarticles\ArticleHook'		=> 'system/modules/c-customarticles/classes/ArticleHook.php',
+	'customarticles\ContentHook'		=> 'system/modules/c-customarticles/classes/ContentHook.php',
 ));
 
 /**
