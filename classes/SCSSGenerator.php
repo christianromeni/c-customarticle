@@ -17,10 +17,10 @@ namespace customarticles;
 class SCSSGenerator {
 	public function create_scss($value, $dc)
 	{
-		$scssTemplate = 'system/modules/c-customarticles/assets/placeholder.scss';
-		$scssFinal = 'system/modules/c-customarticles/assets/final.scss';
+		$scssTemplate = new \Contao\File('system/modules/c-customarticles/assets/placeholder.scss');
+		$scssFinalFile = new \Contao\File('system/modules/c-customarticles/assets/final.scss');
 
-		$scss = file_get_contents($scssTemplate, FILE_USE_INCLUDE_PATH);
+		$scss = $scssTemplate->getContent();
 
 		$gridSMvar = is_array($dc->activeRecord->gridSM) ? $dc->activeRecord->gridSM : deserialize($dc->activeRecord->gridSM);
 		$gridMDvar = is_array($dc->activeRecord->gridMD) ? $dc->activeRecord->gridMD : deserialize($dc->activeRecord->gridMD);
@@ -128,7 +128,8 @@ class SCSSGenerator {
 		$scss = str_replace('[[paddingBottomLG]]', $paddingBottomLG . $unitPadingBottomLG, $scss);
 		$scss = str_replace('[[paddingBottomVLG]]', $paddingBottomVLG . $unitPadingBottomVLG, $scss);
 
-		file_put_contents($scssFinal, $scss);
+		$scssFinalFile->write($scss);
+		$scssFinalFile->close();
 
 		return $value;
 	}
