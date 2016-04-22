@@ -124,6 +124,9 @@
         <source>Pushes the Element in the desktop layout.</source>
       </trans-unit>
 
+      <trans-unit id="tl_content.offset.-1">
+        <source>-</source>
+      </trans-unit>
       <trans-unit id="tl_content.offset_xs.0">
         <source>Offset on mobil</source>
       </trans-unit>

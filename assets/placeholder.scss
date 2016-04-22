@@ -43,7 +43,7 @@
 }
 
 @media (min-width: [[gridLG]]) {
-  @include inside([[gridLG]],[[paddingTopLG]],[[paddingBottomLG]]);
+  @include inside([[widthLG]],[[paddingTopLG]],[[paddingBottomLG]]);
 }
 
 @media (min-width: [[gridVLG]]) {

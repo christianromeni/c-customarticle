@@ -161,6 +161,10 @@
         <source>Offset on mobil</source>
         <target>Offset in Mobil</target>
       </trans-unit>
+      <trans-unit id="tl_content.offset.-1">
+        <source>-</source>
+        <target>-</target>
+      </trans-unit>
       <trans-unit id="tl_content.offset_xs.1">
         <source>Offsets the Element in the mobil layout</source>
         <target>Offsetted das Element in dem mobil layout</target>
