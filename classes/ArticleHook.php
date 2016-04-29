@@ -118,7 +118,7 @@ class ArticleHook extends \System {
 				}
 
 			$customstyle .= "	}";
-			$customstyle .=	".mod_article.customarticle_$tpl->id .inner { ";
+			$customstyle .=	".mod_article.customarticle_$tpl->id .outer { ";
 				if(isset($inner_article_color[0]) && $inner_article_color[0] != ''){
 					$customstyle .= "background-color:" . $this->cHex2rgba($inner_article_color[0],$inner_article_color[1]) . " !important;";
 				}
@@ -129,6 +129,8 @@ class ArticleHook extends \System {
 				if(isset($inner_article_height['value']) && $inner_article_height['value'] != ''){
 					$customstyle .= "min-height:" . $inner_article_height['value'] . $inner_article_height['unit'] . " !important;";
 				}
+			$customstyle .= "	}";
+			$customstyle .=	".mod_article.customarticle_$tpl->id .inner { ";
 				if(isset($inner_article_space) && $inner_article_space != ''){
 					if($inner_article_space == 'top_spaceing'){
 						$customstyle .= "padding-bottom:0 !important;";
