@@ -91,6 +91,10 @@
         <source>Grid Order &amp; Offset</source>
       </trans-unit>
 
+      <trans-unit id="tl_content.pull.-1">
+        <source>-</source>
+        <target>-</target>
+      </trans-unit>
       <trans-unit id="tl_content.pull_xs.0">
         <source>Pull on mobil</source>
         <target>Pull in Mobil</target>
@@ -124,6 +128,10 @@
         <target>Pullt das Element in dem desktop layout.</target>
       </trans-unit>
 
+      <trans-unit id="tl_content.push.-1">
+        <source>-</source>
+        <target>-</target>
+      </trans-unit>
       <trans-unit id="tl_content.push_xs.0">
         <source>Push on mobil</source>
         <target>Push in Mobil</target>
@@ -157,13 +165,13 @@
         <target>Pushed das Element in dem desktop layout.</target>
       </trans-unit>
 
-      <trans-unit id="tl_content.offset_xs.0">
-        <source>Offset on mobil</source>
-        <target>Offset in Mobil</target>
-      </trans-unit>
       <trans-unit id="tl_content.offset.-1">
         <source>-</source>
         <target>-</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_xs.0">
+        <source>Offset on mobil</source>
+        <target>Offset in Mobil</target>
       </trans-unit>
       <trans-unit id="tl_content.offset_xs.1">
         <source>Offsets the Element in the mobil layout</source>
