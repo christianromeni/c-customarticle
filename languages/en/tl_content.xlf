@@ -74,6 +74,9 @@
         <source>Grid Order &amp; Offset</source>
       </trans-unit>
 
+      <trans-unit id="tl_content.pull.-1">
+        <source>-</source>
+      </trans-unit>
       <trans-unit id="tl_content.pull_xs.0">
         <source>Pull on mobil</source>
       </trans-unit>
@@ -99,6 +102,9 @@
         <source>Pulls the Element in the desktop layout.</source>
       </trans-unit>
 
+      <trans-unit id="tl_content.push.-1">
+        <source>-</source>
+      </trans-unit>
       <trans-unit id="tl_content.push_xs.0">
         <source>Push on mobil</source>
       </trans-unit>
@@ -124,6 +130,9 @@
         <source>Pushes the Element in the desktop layout.</source>
       </trans-unit>
 
+      <trans-unit id="tl_content.offset.-1">
+        <source>-</source>
+      </trans-unit>
       <trans-unit id="tl_content.offset.-1">
         <source>-</source>
       </trans-unit>
