@@ -48,60 +48,76 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['grid_lg'] = array (
 $GLOBALS['TL_DCA']['tl_content']['fields']['pull_xs'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['pull_xs'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['pull'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['pull_sm'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['pull_sm'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['pull'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['pull_md'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['pull_md'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['pull'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['pull_lg'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['pull_lg'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['pull'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['push_xs'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['push_xs'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['push'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['push_sm'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['push_sm'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['push'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['push_md'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['push_md'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['push'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['push_lg'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['push_lg'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'options'   => range(-1, 12),
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['push'],
+    'default'   => -1,
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default ''"
 );
 
@@ -111,7 +127,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['offset_xs'] = array (
     'options'   => range(-1, 12),
     'reference' => &$GLOBALS['TL_LANG']['tl_content']['offset'],
     'default'   => -1,
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default '-1'"
 );
 
@@ -121,7 +137,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['offset_sm'] = array (
     'options'   => range(-1, 12),
     'reference' => &$GLOBALS['TL_LANG']['tl_content']['offset'],
     'default'   => -1,
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default '-1'"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['offset_md'] = array (
@@ -130,7 +146,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['offset_md'] = array (
     'options'   => range(-1, 12),
     'reference' => &$GLOBALS['TL_LANG']['tl_content']['offset'],
     'default'   => -1,
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default '-1'"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['offset_lg'] = array (
@@ -139,7 +155,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['offset_lg'] = array (
     'options'   => range(-1, 12),
     'reference' => &$GLOBALS['TL_LANG']['tl_content']['offset'],
     'default'   => -1,
-    'eval'      => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
+    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w25'),
     'sql'       => "varchar(2) NOT NULL default '-1'"
 );
 
