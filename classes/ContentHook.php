@@ -54,7 +54,7 @@ class ContentHook extends \Frontend {
 			];
 
 			foreach ($arrClasses as $key => $classPart) {
-				if($objElement->$key != '' || $objElement->$key != -1){
+				if($objElement->$key != '' && $objElement->$key != -1){
 					$classes .= ' '.$classPart.$objElement->$key;
 				}
 			}
