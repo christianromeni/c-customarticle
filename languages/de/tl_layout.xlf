@@ -88,6 +88,78 @@
         <target>Breite des Grids (sollte weniger sein als die entsprechenden Breakpoint)</target>
       </trans-unit>
 
+      <trans-unit id="tl_layout.paddingTopSM.0">
+        <source>SM Padding Top</source>
+        <target>SM Padding Oben</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopSM.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopMD.0">
+        <source>MD Padding Top</source>
+        <target>MD Padding Oben</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopMD.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopLG.0">
+        <source>LG Padding Top</source>
+        <target>LG Padding Oben</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopLG.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopVLG.0">
+        <source>VLG Padding Top</source>
+        <target>VLG Padding Oben</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthVLG.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomSM.0">
+        <source>SM Padding Bottom</source>
+        <target>SM Padding Untent</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomSM.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomMD.0">
+        <source>MD Padding Bottom</source>
+        <target>MD Padding Untent</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomMD.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomLG.0">
+        <source>LG Padding Bottom</source>
+        <target>LG Padding Untent</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomLG.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomVLG.0">
+        <source>VLG Padding Bottom</source>
+        <target>VLG Padding Untent</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthVLG.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
