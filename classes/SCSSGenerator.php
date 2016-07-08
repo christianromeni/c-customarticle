@@ -21,14 +21,14 @@ class SCSSGenerator {
 		$scssFinalFile = new \Contao\File('system/modules/c-customarticles/assets/final.scss');
 
 		$default = array(
-			'Grid'							=> array('XS' => '100', 'SM' => '768', 'MD' => '992', 'LG' => '1200', 'VLG' => '1600'),
-			'GridUnit'					=> array('XS' => '%', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
-			'Width'							=> array('XS' => '100', 'SM' => '750', 'MD' => '970', 'LG' => '1170', 'VLG' => '1440'),
-			'WidthUnit'					=> array('XS' => '%', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
-			'PaddingTop'				=> array('XS' => '25', 'SM' => '30', 'MD' => '45', 'LG' => '50', 'VLG' => '60'),
-			'PaddingTopUnit'		=> array('XS' => 'px', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
-			'PaddingBottom'			=> array('XS' => '25', 'SM' => '30', 'MD' => '45', 'LG' => '50', 'VLG' => '60'),
-			'PaddingBottomUnit'	=> array('XS' => 'px', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
+			'Grid'              => array('XS' => '100', 'SM' => '768', 'MD' => '992', 'LG' => '1200', 'VLG' => '1600'),
+			'GridUnit'          => array('XS' => '%', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
+			'Width'             => array('XS' => '100', 'SM' => '750', 'MD' => '970', 'LG' => '1170', 'VLG' => '1440'),
+			'WidthUnit'         => array('XS' => '%', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
+			'PaddingTop'        => array('XS' => '25', 'SM' => '30', 'MD' => '45', 'LG' => '50', 'VLG' => '60'),
+			'PaddingTopUnit'    => array('XS' => 'px', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
+			'PaddingBottom'     => array('XS' => '25', 'SM' => '30', 'MD' => '45', 'LG' => '50', 'VLG' => '60'),
+			'PaddingBottomUnit' => array('XS' => 'px', 'SM' => 'px', 'MD' => 'px', 'LG' => 'px', 'VLG' => 'px'),
 		);
 
 		$scss = $scssTemplate->getContent();
@@ -91,28 +91,28 @@ class SCSSGenerator {
 
 	public function split_and_fix($size,$scss,$grid,$width,$paddingTop,$paddingBottom,$default){
 		if($size == 'XS'){
-			$grid				= '100';
-			$unitGrid		= '%';
-			$width			= '100';
-			$unitWidth	= '%';
+			$grid      = '90';
+			$unitGrid  = '%';
+			$width     = '90';
+			$unitWidth = '%';
 		}
 		else {
-			$gridvar						= is_array($grid) ? $grid : deserialize($grid);
-			$widthvar						= is_array($width) ? $width : deserialize($width);
-			$paddingTopvar			= is_array($paddingTop) ? $paddingTop : deserialize($paddingTop);
-			$paddingBottomXSvar	= is_array($paddingBottom) ? $paddingBottom : deserialize($paddingBottom);
-
-			$grid								= empty($gridvar['value']) ? $default['Grid'][$size] : $gridvar['value'];
-			$unitGrid						= empty($gridvar['unit']) ? $default['GridUnit'][$size] : $gridvar['unit'];
-
-			$width							= empty($widthvar['value']) ? $default['Width'][$size] : $widthvar['value'];
-			$unitWidth					= empty($widthvar['unit']) ? $default['WidthUnit'][$size] : $widthvar['unit'];
+			$gridvar          = is_array($grid) ? $grid : deserialize($grid);
+			$widthvar         = is_array($width) ? $width : deserialize($width);
+			$paddingTopvar    = is_array($paddingTop) ? $paddingTop : deserialize($paddingTop);
+			$paddingBottomvar = is_array($paddingBottom) ? $paddingBottom : deserialize($paddingBottom);
+	
+			$grid             = empty($gridvar['value']) ? $default['Grid'][$size] : $gridvar['value'];
+			$unitGrid         = empty($gridvar['unit']) ? $default['GridUnit'][$size] : $gridvar['unit'];
+			
+			$width            = empty($widthvar['value']) ? $default['Width'][$size] : $widthvar['value'];
+			$unitWidth        = empty($widthvar['unit']) ? $default['WidthUnit'][$size] : $widthvar['unit'];
 		}
 
-		$paddingTop					= empty($paddingTopvar['value']) ? $default['PaddingTop'][$size] : $paddingTopvar['value'];
-		$unitPadingTop			= empty($paddingTopvar['unit']) ? $default['PaddingTopUnit'][$size] : $paddingTopvar['unit'];
-		$paddingBottom			= empty($paddingBottomvar['value']) ? $default['PaddingBottom'][$size] : $paddingBottomvar['value'];
-		$unitPadingBottom		= empty($paddingBottomvar['unit']) ? $default['PaddingBottomUnit'][$size] : $paddingBottomvar['unit'];
+		$paddingTop       = empty($paddingTopvar['value']) ? $default['PaddingTop'][$size] : $paddingTopvar['value'];
+		$unitPadingTop    = empty($paddingTopvar['unit']) ? $default['PaddingTopUnit'][$size] : $paddingTopvar['unit'];
+		$paddingBottom    = empty($paddingBottomvar['value']) ? $default['PaddingBottom'][$size] : $paddingBottomvar['value'];
+		$unitPadingBottom = empty($paddingBottomvar['unit']) ? $default['PaddingBottomUnit'][$size] : $paddingBottomvar['unit'];
 
 		$grid1							= (int)$grid-1;
 
