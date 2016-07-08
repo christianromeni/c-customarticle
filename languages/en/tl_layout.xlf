@@ -83,6 +83,62 @@
         <source>Width of the Grid (should be less than the breakpoint)</source>
       </trans-unit>
 
+      <trans-unit id="tl_layout.paddingTopSM.0">
+        <source>SM Padding Top</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopSM.1">
+        <source>Padding of each Article (Top)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopMD.0">
+        <source>MD Padding Top</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopMD.1">
+        <source>Padding of each Article (Top)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopLG.0">
+        <source>LG Padding Top</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopLG.1">
+        <source>Padding of each Article (Top)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopVLG.0">
+        <source>VLG Padding Top</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthVLG.1">
+        <source>Padding of each Article (Top)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomSM.0">
+        <source>SM Padding Bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomSM.1">
+        <source>Padding of each Article (Bottom)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomMD.0">
+        <source>MD Padding Bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomMD.1">
+        <source>Padding of each Article (Bottom)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomLG.0">
+        <source>LG Padding Bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomLG.1">
+        <source>Padding of each Article (Bottom)</source>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomVLG.0">
+        <source>VLG Padding Bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthVLG.1">
+        <source>Padding of each Article (Bottom)</source>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
