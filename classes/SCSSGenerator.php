@@ -97,14 +97,14 @@ class SCSSGenerator {
 			$unitWidth = '%';
 		}
 		else {
-			$gridvar          = is_array($grid) ? $grid : deserialize($grid);
-			$widthvar         = is_array($width) ? $width : deserialize($width);
-			$paddingTopvar    = is_array($paddingTop) ? $paddingTop : deserialize($paddingTop);
-			$paddingBottomvar = is_array($paddingBottom) ? $paddingBottom : deserialize($paddingBottom);
-	
+			$gridvar          = is_array($grid) ? $grid : \Contao\StringUtil::deserialize($grid);
+			$widthvar         = is_array($width) ? $width : \Contao\StringUtil::deserialize($width);
+			$paddingTopvar    = is_array($paddingTop) ? $paddingTop : \Contao\StringUtil::deserialize($paddingTop);
+			$paddingBottomvar = is_array($paddingBottom) ? $paddingBottom : \Contao\StringUtil::deserialize($paddingBottom);
+
 			$grid             = empty($gridvar['value']) ? $default['Grid'][$size] : $gridvar['value'];
 			$unitGrid         = empty($gridvar['unit']) ? $default['GridUnit'][$size] : $gridvar['unit'];
-			
+
 			$width            = empty($widthvar['value']) ? $default['Width'][$size] : $widthvar['value'];
 			$unitWidth        = empty($widthvar['unit']) ? $default['WidthUnit'][$size] : $widthvar['unit'];
 		}
