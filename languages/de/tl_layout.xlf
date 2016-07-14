@@ -155,7 +155,7 @@
         <source>VLG Padding Bottom</source>
         <target>VLG Padding Untent</target>
       </trans-unit>
-      <trans-unit id="tl_layout.widthVLG.1">
+      <trans-unit id="tl_layout.paddingBottomVLG.1">
         <source>Padding of each Article (Bottom)</source>
         <target>Padding jedes Artikels (unten)</target>
       </trans-unit>
