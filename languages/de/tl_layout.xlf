@@ -119,7 +119,7 @@
         <source>VLG Padding Top</source>
         <target>VLG Padding Oben</target>
       </trans-unit>
-      <trans-unit id="tl_layout.widthVLG.1">
+      <trans-unit id="tl_layout.paddingTopVLG.1">
         <source>Padding of each Article (Top)</source>
         <target>Padding jedes Artikels (oben)</target>
       </trans-unit>
