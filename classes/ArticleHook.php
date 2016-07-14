@@ -34,27 +34,27 @@ class ArticleHook extends \System {
 
 			$containertype = 'container';
 
-			$article_color						= deserialize($tpl->article_color);
-			$article_width						= deserialize($tpl->article_width);
-			$article_minheight				= deserialize($tpl->article_minheight);
+			$article_color						= StringUtil::deserialize($tpl->article_color);
+			$article_width						= StringUtil::deserialize($tpl->article_width);
+			$article_minheight				= StringUtil::deserialize($tpl->article_minheight);
 			$article_image						= $tpl->article_image;
 			$article_image_position		= $tpl->article_image_position;
 			$article_image_repeat			= $tpl->article_image_repeat;
 			$article_image_cover			= $tpl->article_image_cover;
 			$article_image_fixed			= $tpl->article_image_fixed;
 
-			$inner_article_width			= deserialize($tpl->inner_article_width);
+			$inner_article_width			= StringUtil::deserialize($tpl->inner_article_width);
 			$inner_article_space			= $tpl->inner_article_space;
 			$inner_article_overflow		= $tpl->inner_article_overflow;
-			$inner_article_color			= deserialize($tpl->inner_article_color);
+			$inner_article_color			= StringUtil::deserialize($tpl->inner_article_color);
 			$inner_article_float			= $tpl->inner_article_float;
-			$inner_article_minheight	= deserialize($tpl->inner_article_minheight);
+			$inner_article_minheight	= StringUtil::deserialize($tpl->inner_article_minheight);
 
 			if($tpl->article_visible != ''){
 				$tmpclasses = $article->cssID;
 				$article_visible = @unserialize($tpl->article_visible);
 				if ($article_visible === 'b:0;' || $article_visible !== false) {
-					foreach ($deserialize($tpl->article_hidden) as $key => $value) {
+					foreach (StringUtil::deserialize($tpl->article_hidden) as $key => $value) {
 						$tmpclasses[1] .= ' ' . $value;
 					}
 				} else {
@@ -66,7 +66,7 @@ class ArticleHook extends \System {
 				$tmpclasses = $article->cssID;
 				$article_hidden = @unserialize($tpl->article_hidden);
 				if ($article_hidden === 'b:0;' || $article_hidden !== false) {
-					foreach (deserialize($tpl->article_hidden) as $key => $value) {
+					foreach (StringUtil::deserialize($tpl->article_hidden) as $key => $value) {
 						$tmpclasses[1] .= ' ' . $value;
 					}
 				} else {
