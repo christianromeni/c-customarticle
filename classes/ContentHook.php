@@ -62,7 +62,7 @@ class ContentHook extends \Frontend {
 			if($objElement->grid_visible != ''){
 				$grid_visible = @unserialize($objElement->grid_visible);
 				if ($grid_visible === 'b:0;' || $grid_visible !== false) {
-					foreach (deserialize($objElement->grid_visible) as $key => $value) {
+					foreach (\Contao\StringUtil::deserialize($objElement->grid_visible) as $key => $value) {
 						$classes .= ' ' . $value;
 					}
 				} else {
@@ -72,7 +72,7 @@ class ContentHook extends \Frontend {
 			if($objElement->grid_hidden != ''){
 				$grid_hidden = @unserialize($objElement->grid_hidden);
 				if ($grid_hidden === 'b:0;' || $grid_hidden !== false) {
-					foreach (deserialize($objElement->grid_hidden) as $key => $value) {
+					foreach (\Contao\StringUtil::deserialize($objElement->grid_hidden) as $key => $value) {
 						$classes .= ' ' . $value;
 					}
 				} else {
@@ -80,8 +80,16 @@ class ContentHook extends \Frontend {
 				}
 			}
 
-			if($objElement->col_no_padding){
+			if($objElement->col_no_padding || $objElement->col_no_padding != ''){
+				if($objElement->col_no_padding == 'padding_no_top_bottom'){
+					$classes .= ' col-no-padding-top-bottom';
+				}
+				if($objElement->col_no_padding == 'padding_no_left_right'){
+					$classes .= ' col-no-padding-left-right';
+				}
+				if($objElement->col_no_padding == 'padding_no_all'){
 					$classes .= ' col-no-padding';
+				}
 			}
 
 			if($objElement->col_centered){
@@ -93,7 +101,7 @@ class ContentHook extends \Frontend {
 			}
 
 			if($classes != ''){
-				$arrCss = deserialize($objElement->cssID);
+				$arrCss = \Contao\StringUtil::deserialize($objElement->cssID);
 				$arrCss[1] .= $classes;
 				$newObjElement->cssID = $arrCss;
 			}

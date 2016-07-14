@@ -187,12 +187,19 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['grid_hidden'] = array (
     'sql'       => "varchar(500) NOT NULL default ''"
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['col_no_padding'] = array (
+$GLOBALS['TL_DCA']['tl_content']['fields']['col_no_padding'] = array
+    (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['col_no_padding'],
-    'inputType' => 'checkbox',
-    'reference' => &$GLOBALS['TL_LANG']['tl_content']['col_no_padding'],
-    'eval'      => array('includeBlankOption'=>false, 'mandatory' => false, 'maxlength' => 500, 'tl_class' => 'w25 m12'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'default' => 'padding_normal',
+    'inputType' => 'select',
+    'options' => array(
+        'padding_normal' => 'Normales Padding',
+        'padding_no_top_bottom' => 'Padding nur links und rechts',
+        'padding_no_left_right' => 'Padding nur oben und unten',
+        'padding_no_all' => 'Keinen Padding'
+    ),
+    'eval' => array('includeBlankOption'=>true, 'mandatory' => false, 'maxlength' => 255, 'tl_class' => 'w50'),
+    'sql' => "varchar(32) NOT NULL default 'padding_normal'"
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['col_centered'] = array (
