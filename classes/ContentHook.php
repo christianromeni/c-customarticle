@@ -80,8 +80,16 @@ class ContentHook extends \Frontend {
 				}
 			}
 
-			if($objElement->col_no_padding){
+			if($objElement->col_no_padding || $objElement->col_no_padding != ''){
+				if($objElement->col_no_padding == 'padding_no_top_bottom'){
+					$classes .= ' col-no-padding-top-bottom';
+				}
+				if($objElement->col_no_padding == 'padding_no_left_right'){
+					$classes .= ' col-no-padding-left-right';
+				}
+				if($objElement->col_no_padding == 'padding_no_all'){
 					$classes .= ' col-no-padding';
+				}
 			}
 
 			if($objElement->col_centered){
