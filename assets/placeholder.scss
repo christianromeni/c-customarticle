@@ -819,9 +819,18 @@
   width: device-width;
 }
 
-.col-no-padding {
+.col-no-padding, .padding_no_all {
   padding: 0 !important;
-  margin: 0 !important;
+}
+
+.padding_no_top_bottom {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.col-no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .col-centered {
