@@ -819,16 +819,16 @@
   width: device-width;
 }
 
-.col-no-padding, .padding_no_all {
+.col-no-padding {
   padding: 0 !important;
 }
 
-.padding_no_top_bottom {
+.col-no-padding-top-bottom {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-.padding_no_left_right {
+.col-no-padding-left-right {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
