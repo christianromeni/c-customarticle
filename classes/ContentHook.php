@@ -101,7 +101,7 @@ class ContentHook extends \Frontend {
 			}
 
 			if($classes != ''){
-				$arrCss = \Contao\StringUtil::deserialize($objElement->cssID);
+				$arrCss = \Contao\StringUtil::deserialize($objElement->cssID, true);
 				$arrCss[1] .= $classes;
 				$newObjElement->cssID = $arrCss;
 			}
